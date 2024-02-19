@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "merkez-bankasi-api",
+  "private_key_id": "9bf92c90555a49e81f3e124d922858c1fcaa4d1a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCLwy6kJW1kKaQy\ni0WXCjEQl1Ruz07piZ/U2s6tOL243y+8C+5M0/fxV7nZizyvmvwDlyhtLLWUw4NY\n7SM9tdLABqC3uCXuFlE+RefF1JPpt8ODMXvwMr3C67oX8b92GHWzsz6Bx0uKb533\nCPCOYk0Wd24PblfYCVf0RC340vP/cPpsjPoCtNxly3mYvKMpf8odzWXOu+Vfci04\nCxSZnmdbxg1/nJhHFiaxSTamtxM6eNLkgAqavOdjARtG8LAwTjXSBFcI+LsM0T19\nT7GzYmlOfO4E27u2AqrgGli6eZet5N0Nd/VenLvbFkfWojVYAryPu01g+4BHMMiE\nnE+Elfo5AgMBAAECggEALAXP1C5h1ZH0QWNzCQ9RwxsXoku0XIVYDfDZ9uAPioLq\ngz3y0spVp/Rs+uQLuniD9xGOz0ys6W3oGoOffRmfh5LO3u+nKuZmssnMJpk9+flD\nITjeBBvHf/VGSbKBD07HDFJiVviSh8l+pUhwlTjLdU8rILst+kN/K9ap8F1qM8RI\nQGYUUhUEz/SGKmufkk3JoKOzFrwMh3LIXu93aeQ4hgMlv9uEVOPbtYSJjXj+A0Aq\ne/rQFrAzm1YI+mulcL2VLFfnFEDHF+T8VDyvlMWL2IuvdCeyFaKnmGJyTCs32Efq\nrpE2ivYY70EQ2iZYcUwsDsAZWtfF+NurRmiYy2HK3QKBgQC/6aA+hCccpGvyBU/p\nap0cxcTtyG50uzDYHIwBidahKCrMJ/ne4/BdYkTvz+xA0q6cxhchbm3V64NAtuDO\ndZfYkIJ9znupYSQURy1uKiyd08mpRvZC5wwhjc3elwWr5lsiMwbvwzvqch4sasR0\nYVDqkyNNsLEz+V+M+XfIDY0kJwKBgQC6b01BU8CriqReIaU52hoTF1szhuCgs/Bh\nB08gcC4hIAEMTUom2TfPd6pEaINfO0eHoXaJ/KWmguSR34Jo0wTEMAU8LS8JJ60P\nGp18QPu/xXYLFxJ/gESDTm3UAMjoLUf9tw/YDghcX+dgXrGPgv7KbEDKovg6gz8e\nbJ/raEUKnwKBgQCYoFwR/BYDAHzc8P6Z23FyRZMVrPaznX/+D84FFzN73a8TyKM/\ncbZi/llnA8yXzTaTdjNFIkb1/6TWHdtyNzF5SYyOM15D2f7Qpb7qw13Sc3IJT2dg\n09HhCZ717NPU35IRA9X7byDCltmKZ6swB4lL1ZMZIXH8rNIiEvEBSE28twKBgARM\nYqSZ8LxDwwxkjDGsRKOiCzlB59XssCMcjwd5bqbW3Q9SjN4ebfn7kVJocnb0n+6R\nm3ENASi4pdpzI8eU7ew0Czra89WrM4NAotbljKhcPh99VbDY3TuFyGR17CvmN12z\nJcteb3TpxSTkqgVcCNHT8x546W437nGeIYXE7qqTAoGBAKnPPAue2pVIyMNhIZvt\ny68xApzcW8RQpa82V1RQdTsCmK6A7hDHeUkIdhwySNHYUlF9ldsUW1u3RRDtdyaH\nl7fLsX4wstaktDTN+QDtNHJPLyLAGmWIo0InWZGNsZe9cB7sRLf12Pniz7JcCUYA\n9ub1DNvtSQhv8nl1EGS2P8g4\n-----END PRIVATE KEY-----\n",
+  "client_email": "merkez-bankasi-api@merkez-bankasi-api.iam.gserviceaccount.com",
+  "client_id": "101305532212809892088",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/merkez-bankasi-api%40merkez-bankasi-api.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
