@@ -3,7 +3,6 @@ name: Scheduled Job
 on:
   schedule:
     - cron: '9 1 * * *'  # Her gün 01:03'te çalıştır
-    - timezone: 'Turkey/Istanbul'
 
 jobs:
   run-job:
