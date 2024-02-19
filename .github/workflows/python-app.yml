@@ -4,10 +4,8 @@
 name: Python application
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  schedule:
+    - cron: '54 22 * * *'  # Her gün 01:03'te çalıştır
 
 permissions:
   contents: read
