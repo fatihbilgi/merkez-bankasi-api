@@ -1,6 +1,8 @@
 name: Scheduled Job
 
-
+on:
+  schedule:
+    - cron: '16 22 * * *'  # Her gün 01:03'te çalıştır
 
 jobs:
   run-job:
