@@ -32,6 +32,9 @@ jobs:
     - name: Show
       run: |
         pwd
+    - name: Lists
+      run: |
+        ls
     - name: Run scriptGoogle.py
       run: |
         cd merkez-bankasi-api
