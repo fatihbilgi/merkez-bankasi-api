@@ -37,4 +37,5 @@ jobs:
         ls
     - name: Run scriptGoogle.py
       run: |
-        chmod +x scriptGoogle.py
+        chmod +x python scriptGoogle.py
+    
