@@ -1,0 +1,18 @@
+name: Scheduled Job
+
+on:
+  schedule:
+    - cron: '9 1 * * *'  # Her gün 01:03'te çalıştır
+    - timezone: 'Turkey/Istanbul'
+
+jobs:
+  run-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Run your script
+      run: |
+        python scriptGoogle.py  # Python script'inizin yolu ve çalıştırılması
