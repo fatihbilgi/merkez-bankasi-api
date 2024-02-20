@@ -3,12 +3,12 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime
 
-# Google Sheets API ile iletişim kurabilmek için kimlik doğrulama yapın
+# Google Sheets API auth
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 credentials = ServiceAccountCredentials.from_json_keyfile_name("merkez-bankasi-api-9bf92c90555a.json", scope)
 gc = gspread.authorize(credentials)
 
-# Google Sheets dokümanını açın (Doküman ID'sini almak için Google Sheets URL'sine bakın)
+# Open google sheets
 spreadsheet_id = "12Jp25Ei2IulYL0UbWXsI1vURE8Fl1l7UqjbVBNdQbNk"
 sheet = gc.open_by_key(spreadsheet_id).sheet1
 
@@ -17,27 +17,26 @@ def get_exchange_rates():
     response = requests.get(url)
 
     if response.status_code == 200:
-        # XML verilerini işleme kodu
+        # XML data process
         rates_data = process_data(response.text)
         update_google_sheets(rates_data)
     else:
         print("Hata oluştu - HTTP Kodu: {}".format(response.status_code))
 
 def process_data(xml_data):
-    # XML verilerini işleme kodu
-    # Bu örnekte, xml.etree.ElementTree modülünü kullanarak XML verilerini işleyeceğiz
+    # xml.etree.ElementTree process
     import xml.etree.ElementTree as ET
 
-    # XML verisini parse et
+    # Parse XML
     root = ET.fromstring(xml_data)
 
-    # Kurları depolamak için bir sözlük oluştur
+    # Create dictionary
     exchange_rates = {}
 
-    # İstediğiniz döviz kodlarını belirtin
+    # Select Currencies
     desired_currencies = ["USD", "EUR", "GBP", "CAD", "AUD"]
 
-    # Döviz kurlarını çıkar
+    # Find Currencies
     for currency_node in root.findall(".//Currency"):
         currency_code = currency_node.get("Kod")
         if currency_code in desired_currencies:
@@ -47,8 +46,7 @@ def process_data(xml_data):
     return exchange_rates
 
 def update_google_sheets(data):
-    # Google Sheets'e veriyi güncelleme kodu
-    # Örneğin: sheet.append_row(["timestamp", "USD", "EUR", "GBP", "CAD", "AUD"])
+    # Update Google Sheets data
     timestamp = datetime.now().strftime("%Y-%m-%d")
     values_to_append = [timestamp] + [data.get(currency, "") for currency in ["USD", "EUR", "GBP", "CAD", "AUD"]]
 
