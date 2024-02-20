@@ -5,7 +5,7 @@ name: Python application
 
 on:
   schedule:
-    - cron: '5 5 * * 1-5'  # Her gün 01:03'te çalıştır
+    - cron: '12 5 * * 1-5'  # Her gün 01:03'te çalıştır
 
 permissions:
   contents: read
