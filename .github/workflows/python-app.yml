@@ -4,8 +4,7 @@ on:
   push:
     branches:
     - main
-  schedule:
-    - cron: '33 5 * * 1-5'  # Her gün 01:03'te çalıştır
+  
 
 permissions:
   contents: read
