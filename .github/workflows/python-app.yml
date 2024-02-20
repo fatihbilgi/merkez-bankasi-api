@@ -30,7 +30,7 @@ jobs:
     - name: Show
       run: |
         pwd
-    - name: List
+    - name: Lists
       run: |
         ls
     - name: Run scriptGoogle.py
