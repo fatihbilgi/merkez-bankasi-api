@@ -49,7 +49,7 @@ def process_data(xml_data):
 def update_google_sheets(data):
     # Google Sheets'e veriyi güncelleme kodu
     # Örneğin: sheet.append_row(["timestamp", "USD", "EUR", "GBP", "CAD", "AUD"])
-    timestamp = datetime.now().strftime("%d-%m-%Y")
+    timestamp = datetime.now().strftime("%Y-%m-%d")
     values_to_append = [timestamp] + [data.get(currency, "") for currency in ["USD", "EUR", "GBP", "CAD", "AUD"]]
 
     sheet.append_row(values_to_append)
