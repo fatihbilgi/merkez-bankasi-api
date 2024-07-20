@@ -1,0 +1,2 @@
+# Central Bank API
+As part of this project, I am updating the daily exchange rates using the Central Bank's API for the accounting approval process I developed in our company's CRM system. This update is automated through GitHub Actions. By calculating the TL equivalent of payments received in foreign currency, the accounting approval process I developed ensures that the necessary approvals are sent to the relevant authorities.
